@@ -43,12 +43,12 @@ int get_processors_num(void)
             }
             return processors_num;*/
         #else
-            fprintf(stderr, "get_processors_num_alpha() failed:\n%s\n", strerror (errno));
+            fprintf(stderr, "get_processors_num() failed:\n%s\n", strerror (errno));
             return FAILURE;
         #endif
     #endif
 
-    fprintf(stderr, "get_processors_num_alpha() failed:\n%s\n", strerror (errno));
+    fprintf(stderr, "get_processors_num() failed:\n%s\n", strerror (errno));
     return FAILURE;
 
 }

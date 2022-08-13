@@ -51,7 +51,7 @@
 
 /* function prototypes and documentation */
 
-/* TODO: right doc */
+/* TODO: write doc */
 int get_processors_num(void);
 
 

@@ -13,7 +13,7 @@ int get_processors_num(void)
     #ifdef OS_WIN /* Windows system */
         SYSTEM_INFO sys_info;
         GetSystemInfo(&sys_info);
-        processors_num = sysconf(sys_info.dwNumberOfProcessors);
+        processors_num = sys_info.dwNumberOfProcessors;
 
         if (processors_num < 1) /* failure */
         {

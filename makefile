@@ -1,3 +1,5 @@
+# for Linux
+
 get_procs.out : main.o processors_num.o
 	gcc -g -Wall -std=c99 main.o processors_num.o -o get_procs.out
 

@@ -22,4 +22,10 @@
 
     #endif
 
+    /*
+        TODO
+        develop something for macos or other apple systems, for example 
+        #elif defined __APPLE__ || defined __MACH__TARGET_OS_MAC
+    */
+
 #endif

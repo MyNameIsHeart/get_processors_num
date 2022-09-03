@@ -6,7 +6,7 @@ get_procs.out : main.o processors_num.o
 main.o : main.c
 	gcc -c -Wall -std=c99 main.c -o  main.o
 
-processors_num.o : processors_num.c processors_num.h
+processors_num.o : processors_num.c processors_num.h libs.h define_os.h
 	gcc -c -Wall -std=c99 processors_num.c -o processors_num.o
 
 clean:

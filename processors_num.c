@@ -34,14 +34,6 @@ int get_processors_num(void)
                 return FAILURE;
             }
             return processors_num;
-        /*#else
-            processors_num = get_nprocs_conf();
-            if (processors_num < 1)
-            {
-                fprintf(stderr, "Could not determine number of processors configured (on Unix-like):\n%s\n", strerror (errno));
-                return FAILURE;
-            }
-            return processors_num;*/
         #else
             fprintf(stderr, "get_processors_num() failed:\n%s\n", strerror (errno));
             return FAILURE;
